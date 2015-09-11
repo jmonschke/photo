@@ -2,24 +2,109 @@
 <html>
 <head>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower' rel='stylesheet' type='text/css'>
-    <title>Kayla Monschke Photography</title>
     <link rel="stylesheet" href="./css/normalize.css">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Kayla Monschke Photography</title>
+    <link href='./css/onepage-scroll.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <section class="logo">Kayla Monschke<br/>Photography</section>
+    <div class="wrapper">
+        <div class="main">
+
+            <section class="page1" id="home">
+                <div class="page_container">
+                    <h1 class="logo">Kayla Monschke Photography</h1>
+                    <br />
+                    <h2>Suspicio? Bene ... tunc ibimus? Quis uh</h2>
+                </div>
+                <img src="./images/home.jpg">
+            </section>
+
+            <section class="page2" id="about">
+                <div class="page_container">
+                    <h1>About Kayla</h1>
+                    <h2>Hey man, look at Marvin's hand. He can't play with his hands like that, and we can't play without him. Next, please. Watch this. Not me, the car, the car. My calculations are correct, when this baby hits eighty-eight miles per hour, your gonna see some serious shit. Watch this, watch this. Ha, what did I tell you, eighty-eight miles per hour. The temporal displacement occurred at exactly 1:20 a.m. and zero seconds.</h2>
+
+                </div>
+                <img src="./images/about.jpg">
+            </section>
+
+            <section class="page3" id="babies">
+                <div class="page_container">
+                    <h1>Babies!!!</h1>
+                    <h2>Ancient alien technology space travel extraterrestrial foo fighter stonehenge, legendary times UFO portal Chariot of the Gods anti-gravity, star people King Soloman anti-gravity astronaut.</h2>
+
+                </div>
+                <img src="./images/babies.jpg">
+            </section>
+
+            <section class="page4" id="kids">
+                <div class="page_container">
+                    <h1>Kids</h1>
+                    <h2>Chandler rigging lookout lateen sail schooner scallywag brigantine Jack Tar. Avast plunder execution dock starboard take a caulk gun chantey keel. Swing the lead list Corsair crack Jennys tea cup cog boom rutters mutiny.</h2>
+                </div>
+
+                <img src="./images/kids.jpg">
+            </section>
+
+            <section class="page5" id="families">
+                <div class="page_container">
+                    <h1>Families</h1>
+                    <h2>Open source microsoft word leadership linux is not in the public domain. Google is not a real company hotmail outlook there's no chance that the iPhone is going to get any significant market share Zune innovation windows phone. Outlook no i do not have an ipod Zune google is not a real company linux is not in the public domain DEVELOPERS. Leadership vista i have never honestly thrown a chair in my life outlook. Google is not a real company linux is not in the public domain microsoft excel Whoo! i've got my kids brainwashed powerpoint presentation.</h2>
+                </div>
+
+                <img src="./images/families.jpg">
+            </section>
+
+            <section class="page6" id="maternity">
+                <div class="page_container">
+                    <h1>Maternity</h1>
+                    <h2>Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time? We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?</h2>
+                </div>
+
+                <img src="./images/maternity.jpg">
+            </section>
+
+
+        </div>
+    </div>
+    <footer>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="navigation">
+                <li>
+                    <a data-index="1" href="#home">Home</a>
+                </li>   
+                <li>
+                    <a data-index="2" href="#about">About</a>
+                </li>    
+                <li>
+                    <a data-index="3" href="#babies">Babies</a>
+                </li>    
+                <li>
+                    <a data-index="4" href="#kids">Kids</a>
+                </li>
+                <li>
+                    <a data-index="5" href="#families">Families</a>
+                </li>
+                <li>
+                    <a data-index="6" href="#maternity">Maternity</a>
+                </li>
             </ul>
         </nav>
-    </header>
+    </footer>
+    <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.onepage-scroll.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".main").onepage_scroll({
+                sectionContainer: "section",
+                responsiveFallback: 600,
+                loop: true
+            });
+        });
 
-    This is a test
-
-    <footer>Copyright &copy; 2015 Kayla Monschke Photography. Design By <a href="https://www.thegeekspeaks.net">J$</a></footer>
+    </script>
 </body>
 </html>
