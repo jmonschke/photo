@@ -1,0 +1,17 @@
+body {
+  font-size: 16px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+}
+header {
+  width: 100%;
+}
+.logo {
+  font-family: 'Dancing Script', 'helvetica neue', helvetica, arial;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
