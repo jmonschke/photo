@@ -150,12 +150,22 @@ header {
   overflow: hidden;
 }
 
-.main section > img {
+.main section > img  {
   position: absolute;
+  z-index: 1;
+  min-height: 100%;
+  min-width: 2000px;
+  width: 100%;
+  height: auto;
   top: 0;
   left: 0;
-  max-width: 100%;
-  z-index: 1;
+}
+
+@media screen and (max-width: 2000px) { 
+  .main section > img  {
+    left: 50%;
+    margin-left: -1000px;
+  }
 }
 .main section h1,
 .main section h2 {
@@ -188,7 +198,7 @@ footer nav {
 
 nav ul, nav li {
   list-style: none;
-  min-width: 150px;
+  min-width: 100px;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
@@ -213,26 +223,8 @@ nav li a:focus {
   color: #ccc;
 }
 
-/* Large */
-.navigation {
-  display: flex;
-  flex-flow: row wrap;
-  /* This aligns items to the end line on main-axis */
-  justify-content: flex-end;
-}
-
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .navigation {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
-  }
-}
-
-/* Small screens */
-@media all and (max-width: 500px) {
-  .navigation {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
+@media (max-width: 700px) {
+  footer nav {
+    display: none;
   }
 }
